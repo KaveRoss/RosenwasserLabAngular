@@ -1,0 +1,85 @@
+@import "../../assets/_scss/rosenwasserLab.scss";
+.strip {
+  box-sizing: content-box;
+  background-image: url("../../assets/images/baner1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  @media #{$break2} {
+    min-height: 400rem;
+  }
+  @media #{$break1} {
+    min-height: 200rem;
+  }
+
+  h1 {
+    font-weight: 800;
+    color: #99e600;
+    text-shadow: 0rem 0rem 40rem #000000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    @media #{$break2} {
+      font-size: 70rem;
+    }
+    @media #{$break1} {
+      font-size: 35rem;
+    }
+  }
+}
+
+.sentence {
+  background-color: rgb(57, 176, 0);
+  position: relative;
+  @media #{$break2} {
+    padding: 30rem;
+  }
+  @media #{$break1} {
+    padding: 20rem;
+  }
+  h2 {
+    color: rgb(59, 59, 59);
+    text-shadow: 0.5rem 0.5rem 1rem black;
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    @media #{$break2} {
+      font-size: 29rem;
+    }
+    @media #{$break1} {
+      font-size: 20rem;
+    }
+  }
+}
+
+.home-main {
+  text-align: center;
+
+  video {
+    @media #{$break2} {
+      width: 75%;
+      height: 590rem;
+    }
+    @media #{$break1} {
+      width: 100%;
+      height: 250rem;
+    }
+  }
+
+  .img {
+    margin: 16rem;
+  }
+
+  &-rows {
+    @media #{$break2} {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media #{$break1} {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}

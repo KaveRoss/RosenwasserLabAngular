@@ -1,0 +1,44 @@
+<div class="pub-detail">
+  <article dir="ltr" style="text-align: start">
+    <h1>{{ _json[id].title }}<br /></h1>
+    <h4>{{ _json[id].writes }}</h4>
+    <p>{{ _json[id].journal }}</p>
+    <p>{{ _json[id].abstract }}</p>
+  </article>
+  <div class="button">
+    <h3>
+      <a
+        href="https://www.biorxiv.org/content/10.1101/2020.11.26.386573v1"
+        target="_blank"
+        class="btn"
+        >Full text</a
+      >
+    </h3>
+    <div class="next">
+      <h3>
+        <a
+          (click)="clickNext()"
+          href="#"
+          target="_self"
+          class="btn"
+          routerLink="/publications/detail/{{
+            _json.indexOf(_json[id] + idCounter)
+          }}"
+          >Next</a
+        >
+      </h3>
+      <h3>
+        <a href="#" routerLink="/publications" class="btn">Publictions</a>
+      </h3>
+      <h3>
+        <a
+          href="#"
+          routerLink="/publications/detail/{{ _json.indexOf(_json[id]) - 1 }}"
+          target="_self"
+          class="btn"
+          >Back</a
+        >
+      </h3>
+    </div>
+  </div>
+</div>

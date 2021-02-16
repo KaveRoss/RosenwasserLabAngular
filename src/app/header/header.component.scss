@@ -1,0 +1,118 @@
+:root {
+  --dealy: "1s";
+}
+
+@import "../../assets/_scss/rosenwasserLab.scss";
+header {
+  z-index: 1;
+  box-sizing: content-box;
+  height: 100px;
+  background-color: white;
+  border-top: 48px solid rgb(57, 176, 0);
+  position: sticky;
+  top: 0;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+  a {
+    font-size: 20rem;
+    color: rgb(206, 206, 206);
+    &:hover {
+      color: rgb(81, 255, 0);
+    }
+  }
+}
+@media #{$break1} {
+  .allsite {
+    overflow-x: hidden;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    nav {
+      .nav-links {
+        transform: translateX(100%);
+        position: absolute;
+        right: 0;
+        height: 88vh;
+        top: 0;
+        background-color: rgb(240, 255, 240);
+        width: 65%;
+        transition: transform 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        li {
+          transition: 0.5s;
+          opacity: 0;
+          transform: translateX(100%);
+          // transform: translateX(50px);
+        }
+        a {
+          font-size: 24rem;
+          color: rgb(112, 112, 112);
+          transition: 0.25s;
+        }
+      }
+      .nav-active {
+        transform: translateX(0);
+        @for $i from 1 through 6 {
+          .li#{$i} {
+            opacity: 1;
+            transform: translateX(0);
+            $x: $i/6;
+            transition-delay: #{$x}s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bars {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: -41rem;
+  margin-right: 6rem;
+  cursor: pointer;
+}
+.bar {
+  // height: 0px;
+  width: 35px;
+  border: 4px black solid;
+  border-radius: 10px;
+  margin: 3px;
+}
+.bar1 {
+  transition: 0.5s;
+  transform: rotate(0) translate(0, 0);
+}
+.bar2 {
+  transition: 0.3s;
+  opacity: 1;
+}
+.bar3 {
+  transition: 0.5s;
+  transform: rotate(0) translate(0, 0);
+}
+.bar-active .bar1 {
+  transition: 0.5s;
+  transform: rotate(45deg) translate(5px, 10px);
+}
+.bar-active .bar2 {
+  transition: 0.3s;
+  opacity: 0;
+}
+.bar-active .bar3 {
+  transition: 0.5s;
+  transform: rotate(-45deg) translate(5px, -10px);
+}

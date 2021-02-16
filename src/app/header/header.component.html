@@ -1,0 +1,42 @@
+<header>
+  <nav>
+    <div class="logo">
+      <a href="#" routerLink="/" (click)="clickCounter()"
+        ><img src="../../assets/images/logo.svg" width="340px" height="100px"
+      /></a>
+    </div>
+    <ul class="nav-links" [ngClass]="{ 'nav-active': counter % 2 != 0 }">
+      <li class = "li1">
+        <a href="#/" routerLink="/" id="home" (click)="clickCounter()">Home</a>
+      </li>
+      <li class = "li2">
+        <a href="#" routerLink="/research-interests" id="ResearchInteresting" (click)="clickCounter()"
+          >Research Interests</a
+        >
+      </li>
+      <li class = "li3">
+        <a (click)="clickCounter()" href="#" routerLink="/publications" id="Publications"
+          >Publications</a
+        >
+      </li>
+      <li class = "li4">
+        <a (click)="clickCounter()" href="#" id="Team">Team</a>
+      </li>
+      <li class = "li5">
+        <a (click)="clickCounter()" href="#" id="TeamLife">Team Life</a>
+      </li>
+      <li class = "li6">
+        <a (click)="clickCounter()" href="#" routerLink="/contact-us" id="ContactUs">Contact Us</a>
+      </li>
+    </ul>
+    <div
+      class="bars u-desk-hide"
+      (click)="clickCounter()"
+      [ngClass]="{ 'bar-active': counter % 2 != 0 }"
+    >
+      <div class="bar bar1" id="bar1"></div>
+      <div class="bar bar2" id="bar2"></div>
+      <div class="bar bar3" id="bar3"></div>
+    </div>
+  </nav>
+</header>

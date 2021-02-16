@@ -1,0 +1,79 @@
+@import "../../assets/_scss/rosenwasserLab.scss";
+.con {
+  h1 {
+    color: rgb(0, 107, 0);
+    @media #{$break2} {
+      font-size: 60rem;
+    }
+    @media #{$break1} {
+      font-size: 37rem;
+    }
+  }
+
+  &-row {
+    display: grid;
+    padding: 0;
+    margin-top: 4em;
+
+    @media #{$break2} {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media #{$break1} {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &-boxes {
+    margin: 12rem;
+    border: 4rem solid darken($green, 60%);
+    text-align: center;
+    padding: 0;
+    position: relative;
+    -webkit-box-shadow: 0rem 3rem 15rem -4rem #000000;
+    box-shadow: 0rem 3rem 15rem -4rem #000000;
+
+    h2 {
+      font-size: 60rem;
+      background-color: rgb(94, 189, 85);
+      margin: 0;
+      color: rgb(0, 100, 17);
+      text-shadow: -1rem -1rem 1rem rgba(255, 255, 255, 0.1),
+        1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      font-size: 25rem;
+      margin: 16rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(0, 68, 255);
+      font-size: 30rem;
+      justify-content: center;
+      margin-top: 1em;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    svg {
+      min-width: 130rem;
+      min-height: 130rem;
+      margin: 32rem;
+    }
+  }
+
+  iframe {
+    @media #{$break1} {
+      width: 100%;
+    }
+    @media #{$break2} {
+      width: 200%;
+    }
+  }
+  img {
+    width: 66.65%;
+  }
+}

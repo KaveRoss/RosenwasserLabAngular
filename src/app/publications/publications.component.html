@@ -1,0 +1,32 @@
+<div class="pub-main">
+  <h1 style="text-align: start">Publications</h1>
+  <img src="../../assets/images/line.png" class="none" />
+  <div class="pub-list">
+    <article>
+      <h3 class="select">Selected Publications</h3>
+    </article>
+    <div class="pub-form">
+      <form>
+        <img src="../../assets/images/glass.png" height="20px" />
+        <input type="text" placeholder="search.." />
+      </form>
+    </div>
+    <div class="pub-rows">
+      <div class="pub-boxes" *ngFor="let item of _json">
+        <a href="#" routerLink="/publications/detail/{{ _json.indexOf(item) }}">
+          <img src="../../assets/images/{{ item.image }}" class="img" />
+          <h2>{{ item.title }}</h2>
+          <p>{{ item.writes }}</p>
+          <p class="jornal">{{ item.journal }}</p>
+        </a>
+      </div>
+    </div>
+    <h4>
+      <a
+        href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=shilo+rosenwasser&btnG=&oq=shilo+ro"
+        target="_blank"
+        >To all publications</a
+      >
+    </h4>
+  </div>
+</div>
