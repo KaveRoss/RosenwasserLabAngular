@@ -1,4 +1,7 @@
 @import "../../assets/_scss/rosenwasserLab.scss";
+$break1: "(max-width:700px)";
+$break2: "(min-width:701px)";
+
 
 .res-main {
   @media #{$break2} {

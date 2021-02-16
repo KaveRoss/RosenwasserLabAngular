@@ -126,6 +126,14 @@
               "devServerTarget": "rosenwasserLab:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/rosenwasserLab",
+            "netlifyToken": "u3wuksu3EFot7jyk7D41LaEoNh2hIXW4ir3JPFGUmSw",
+            "siteId": "    a7b36cf1-3c07-4535-8d1d-13cec27565a6"
+          }
         }
       }
     }

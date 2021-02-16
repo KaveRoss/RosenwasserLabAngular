@@ -1,4 +1,8 @@
 @import "../../assets/_scss/rosenwasserLab.scss";
+$break1: "(max-width:700px)";
+$break2: "(min-width:701px)";
+
+
 .con {
   h1 {
     color: rgb(0, 107, 0);
