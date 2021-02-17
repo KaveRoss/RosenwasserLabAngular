@@ -54,6 +54,7 @@ header {
         }
         a {
           font-size: 24rem;
+          @media #{$break1h}, #{$break3h}{font-size: 24px;}
           color: rgb(112, 112, 112);
           transition: 0.25s;
         }
