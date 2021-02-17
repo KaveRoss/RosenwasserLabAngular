@@ -1,1 +1,76 @@
-@import "./assets/_scss/rosenwasserLab.scss";
+$green: rgb(241, 253, 221);
+:root {
+    --green: rgb(241, 253, 221);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+figure {
+  margin: 0;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+}
+cite {
+  font-size: normal;
+}
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--green);
+}
+.allsite {
+  background-color: var(--green);
+}
+html {
+  font-size: 6.25%;
+} /*6.25% = 1px*/
+
+body {
+  font-size: 16rem;
+  font-family: "roboto";
+}
