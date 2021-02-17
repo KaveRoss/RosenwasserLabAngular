@@ -2,12 +2,7 @@
 .con {
   h1 {
     color: rgb(0, 107, 0);
-    @media #{$break2} {
-      font-size: 60rem;
-    }
-    @media #{$break1} {
-      font-size: 37rem;
-    }
+    font-size: 60rem;
   }
 
   &-row {

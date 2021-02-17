@@ -63,7 +63,9 @@ body {
   background-color: var(--green);
 }
 html {
-  font-size: 6.25%;
+  @media #{$break2h}{font-size: 6.25%;}
+  @media #{$break3h}{font-size: 4.75%;}
+  @media #{$break1h}{font-size: 4%;}
 } /*6.25% = 1px*/
 
 body {

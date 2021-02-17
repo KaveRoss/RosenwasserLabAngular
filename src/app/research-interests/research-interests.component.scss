@@ -21,39 +21,15 @@
   }
   h1 {
     color: rgb(0, 107, 0);
-    @media #{$break2} {
-      font-size: 60rem;
-    }
-    @media #{$break1} {
-      font-size: 37rem;
-    }
-    @media #{$break3} {
-      font-size: 45rem;
-    }
+    font-size: 60rem;
   }
   h2 {
     color: rgb(44, 138, 0);
     margin-bottom: 12rem;
-    @media #{$break2} {
-      font-size: 30px;
-    }
-    @media #{$break1} {
-      font-size: 15rem;
-    }
-    @media #{$break3} {
-      font-size: 20rem;
-    }
+    font-size: 30px;
   }
   p {
-    @media #{$break2} {
-      font-size: 25rem;
-    }
-    @media #{$break1} {
-      font-size: 15rem;
-    }
-    @media #{$break3} {
-      font-size: 20rem;
-    }
+    font-size: 25rem;
   }
   img {
     @media #{$break1} {

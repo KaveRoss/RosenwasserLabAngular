@@ -2,12 +2,7 @@
 .pub-main {
   h1 {
     color: rgb(0, 107, 0);
-    @media #{$break2} {
-      font-size: 60rem;
-    }
-    @media #{$break1} {
-      font-size: 37rem;
-    }
+    font-size: 60rem;
   }
   img {
     @media #{$break1} {
@@ -98,12 +93,11 @@ form {
     text-align: center;
     margin-top: 36rem;
     padding: 12rem;
+    font-size: 40rem;
     @media #{$break2} {
-      font-size: 40rem;
       margin: 12rem;
     }
     @media #{$break1} {
-      font-size: 25rem;
       margin: 0rem;
     }
   }
@@ -112,31 +106,21 @@ form {
     text-align: center;
     margin: 12rem;
     padding: 12rem;
-    @media #{$break2} {
-      font-size: 20rem;
-    }
-    @media #{$break1} {
-      font-size: 20rem;
-    }
+    font-size: 20rem;
   }
   p {
-    @media #{$break2} {
       font-size: 20rem;
-    }
-    @media #{$break1} {
-      font-size: 15rem;
-    }
   }
   .btn {
     text-decoration: none;
     color: white;
     background-color: yellowgreen;
+    font-size: 20rem;
     @media #{$break2} {
-      font-size: 20rem;
+
       padding: 20rem;
     }
     @media #{$break1} {
-      font-size: 14rem;
       padding: 10rem;
     }
   }
