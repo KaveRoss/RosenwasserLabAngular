@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'publications', component: PublicationsComponent },
   { path: 'publications/detail/:id', component: PublicationsDetailComponent },
   { path: 'contact-us', component: ContactUsComponent },
-  { path: 'research-interests', component: ResearchInterestsComponent },
+  // { path: 'research-interests', component: ResearchInterestsComponent },
 ];
 
 @NgModule({
