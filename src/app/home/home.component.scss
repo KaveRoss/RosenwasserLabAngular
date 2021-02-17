@@ -1,11 +1,4 @@
-// @import "../../assets/_scss/rosenwasserLab.scss";
-$break1: "(max-width:700px)";
-$break2: "(min-width:701px)";
-$green: rgb(241, 253, 221);
-:root {
-    --green: rgb(241, 253, 221);
-}
-
+@import "../varibels.scss";
 .strip {
   box-sizing: content-box;
   background-image: url("../../assets/images/baner1.jpg");
@@ -70,8 +63,8 @@ $green: rgb(241, 253, 221);
       height: 590rem;
     }
     @media #{$break1} {
-      width: 100%;
-      height: 250rem;
+      width: 75%;
+      height: 235rem;
     }
   }
 
@@ -80,13 +73,7 @@ $green: rgb(241, 253, 221);
   }
 
   &-rows {
-    @media #{$break2} {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    @media #{$break1} {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
+      grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
   }
 }

@@ -1,12 +1,4 @@
-// @import "../../assets/_scss/rosenwasserLab.scss";
-$break1: "(max-width:700px)";
-$break2: "(min-width:701px)";
-$green: rgb(241, 253, 221);
-:root {
-    --green: rgb(241, 253, 221);
-}
-
-
+@import "../varibels.scss";
 .pub-main {
   h1 {
     color: rgb(0, 107, 0);

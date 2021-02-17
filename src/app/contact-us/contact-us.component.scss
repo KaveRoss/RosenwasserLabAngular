@@ -1,11 +1,4 @@
-// @import "../../assets/_scss/rosenwasserLab.scss";
-$break1: "(max-width:700px)";
-$break2: "(min-width:701px)";
-$green: rgb(241, 253, 221);
-:root {
-    --green: rgb(241, 253, 221);
-}
-
+@import "../varibels.scss";
 .con {
   h1 {
     color: rgb(0, 107, 0);
@@ -22,7 +15,7 @@ $green: rgb(241, 253, 221);
     padding: 0;
     margin-top: 4em;
 
-    @media #{$break2} {
+    @media #{$break2}, #{$break3} {
       grid-template-columns: 1fr 1fr;
     }
     @media #{$break1} {

@@ -1,10 +1,4 @@
-
-$break1: "(max-width:700px)";
-$break2: "(min-width:701px)";
-$green: rgb(241, 253, 221);
-:root {
-    --green: rgb(241, 253, 221);
-}
+@import "../varibels.scss";
 header {
   z-index: 1;
   box-sizing: content-box;
