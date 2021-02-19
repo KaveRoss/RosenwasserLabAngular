@@ -7,6 +7,7 @@ header {
   border-top: 48px solid rgb(57, 176, 0);
   position: sticky;
   top: 0;
+  box-shadow: 1px 0px 20px -2px black;
   nav {
     display: flex;
     justify-content: space-between;
@@ -18,8 +19,8 @@ header {
     width: 60%;
   }
   a {
-    font-size: 20rem;
-    color: rgb(206, 206, 206);
+    font-size: 21rem;
+    color: rgb(173, 173, 173);
     &:hover {
       color: rgb(81, 255, 0);
     }
@@ -30,8 +31,6 @@ header {
     overflow-x: hidden;
   }
   header {
-    position: sticky;
-    top: 0;
     nav {
       .nav-links {
         transform: translateX(100%);

@@ -66,6 +66,7 @@ html {
   @media #{$break2h}{font-size: 6.25%;}
   @media #{$break3h}{font-size: 5.75%;}
   @media #{$break1h}{font-size: 5.25%;}
+  @media (max-width: 380px){font-size: 4.75%;}
 } /*6.25% = 1px*/
 
 body {
